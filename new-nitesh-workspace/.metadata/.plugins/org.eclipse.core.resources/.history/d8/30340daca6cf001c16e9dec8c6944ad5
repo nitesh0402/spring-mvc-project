@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Our student records are :-</h1>>
+<h1>${studentRecord}</h1>
+
+<h3>Employee Details</h3>
+<hr size="4" color="gray"/>
+<table>
+    <%
+    for(int i=0; i<studentRecord.length;i++){ %>
+        <tr>
+            <td><%= ((Student)eList[i]).getEid() %></td>
+            <td><%= ((Student)eList[i]).getEname() %></td>  
+        </tr>
+      <%}%>
+</table>
+
+</body>
+</html>

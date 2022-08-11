@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Our student records are :-</h1>>
+<h1>${studentRecord}</h1>
+
+<h3>Employee Details</h3>
+<hr size="4" color="gray"/>
+<table>
+
+    <c:forEach items="${studentRecord}" var="student">
+        <tr>
+            <td>Employee ID: <c:out value="${student.rno}"/></td>
+            <td>Employee Pass: <c:out value="${student.sname}"/></td>  
+        </tr>
+    </c:forEach>
+</table>
+</body>
+</html>

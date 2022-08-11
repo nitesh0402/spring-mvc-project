@@ -1,0 +1,42 @@
+
+	import java.util.ArrayList;
+
+	import javax.swing.text.html.HTMLDocument.Iterator;
+	//Type mismatch: cannot convert from Iterator to HTMLDocument.Iterator
+	public class palindorme {
+		
+		public static void main(String []args) 
+		{
+			
+			
+			
+			int reverse=0,rem;
+			int num[]= {121,155661,112211,1234,1441}; 
+			
+			
+			for(int i=1;i<=num.length;i++)
+			{
+				
+				rem=num[i]%10;
+				reverse=reverse*10+rem;
+				num[i]=num[i]/10;
+				
+			
+				if(num[i]==reverse) 
+				
+					
+					System.out.println(num[i]);
+				
+				}
+			
+			 
+			
+			
+			
+			
+		}
+		
+	}
+
+	
+

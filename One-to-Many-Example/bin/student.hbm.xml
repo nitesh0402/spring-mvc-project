@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.onetomany.example.Student" table="student_tbl">
+
+		<id name="stuRoll" column="stuRoll">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="name" />
+		
+		
+		<list name="course" cascade="all">  
+          <key column="courseId"></key>  
+          <index column="type"></index>  
+          <one-to-many class="com.onetomany.example.Course"/> 
+		</list> 
+	</class>
+	
+	  <class name="com.onetomany.example.Course" table="course_tbl">
+
+		<id name="courseId" column="courseId">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="courName" />
+		
+	</class>
+	
+</hibernate-mapping>

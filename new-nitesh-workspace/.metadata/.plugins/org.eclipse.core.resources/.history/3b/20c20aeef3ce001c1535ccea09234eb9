@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <form action="uniquenum">  FindUniqueNumber
+<input type="number" name="arr" placeholder="enter arr">
+<input type="submit">  <br><br>
+  
+ <!-- <form action="reversenum"> FindReverseNum
+<input type="number" name="num1" placeholder="enter number">
+<input type="submit"> <br><br>  -->
+
+
+<!--  <form action="Duplicalenum"> FindDuplicateNum
+<input type="number" name="num1" placeholder="enter number">
+<input type="submit"> <br><br>
+  -->
+
+
+ <!--  <a href="check">Check</a><br><br><br><br> <br><br> 
+  -->
+ <!-- <form action="getAddition">  TwoNumAddiction
+<input type="number" name="num1" id="num1" placeholder="Enter 1st number"><br><br>
+<input type="number" name="num2" id="num2" placeholder="Enter 2st number"><br><br>
+<input type="submit"> <br><br>
+ -->
+ <!--  <form action="wlcHello">  AddToNum
+<input type="number" name="num1" placeholder="enter number">
+<input type="submit"> 
+  -->
+<!-- 
+  <form action="Num">  FindUniqueNumber
+<input type="number" name="arr" placeholder="enter arr">
+<input type="submit">  <br><br>
+  -->
+
+ <!-- <form action="Add">TwoNumAdd
+<input type="number" name="arr" placeholder="enter arr">
+<input type="submit">  <br><br>
+  -->
+</form>
+
+
+
+</body>
+</html>

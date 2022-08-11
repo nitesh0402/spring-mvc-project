@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name="com.onetomanyA.Company" table="company_tbl">
+
+		<id name="comId" column="comId">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="comName" />
+		<set name="forkey" cascade="all">
+		<key column="num"></key>
+<one-to-many class="com.onetomanyA.Employe"/>
+</set>
+
+
+	</class>
+</hibernate-mapping>

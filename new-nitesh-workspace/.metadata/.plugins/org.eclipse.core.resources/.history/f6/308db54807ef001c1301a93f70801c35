@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  <a href="si">call SiForm</a><br><br>  -->
+
+    <a href="Select">fetch student records</a><br><br> 
+ 
+<!-- <form action="stuDetail">   
+RollNumber<input type="number" name="rollNum" id="rollNum"><br><br>
+Student Name<input type="text" name="name" id="name"><br><br>
+<input type="submit">
+</form>  -->
+ 
+<!-- 
+  <form action="DeleteempRecord">   deleteData
+Employe Id<input type="number" name="empId" id="empId"><br><br>
+Employe Name<input type="text" name="empName" id="empName"><br><br>
+Employe Sallary<input type="number" name="empSall" id="empSall"><br><br>
+<input type="submit">
+</form>
+   -->
+ 
+ 
+<!--  <form action="Insert">   
+Employe Id<input type="number" name="empId" id="empId"><br><br>
+Employe Name<input type="text" name="empName" id="empName"><br><br>
+
+Employe Sallary<input type="number" name="empSall" id="empSall"><br><br>
+<input type="submit">
+</form>
+  -->
+ 
+</body>
+</html>

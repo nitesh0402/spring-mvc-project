@@ -1,0 +1,40 @@
+package bao;
+
+import java.util.ArrayList;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class Palimdrome {
+
+	
+	public static void main(String []args) 
+	{
+		 ArrayList list
+         = new ArrayList<>();
+
+     list.add("Geeks");
+     list.add("for");
+     list.add("Geeks");
+     list.add("is");
+     list.add("a");
+     list.add("CS");
+     list.add("Students");
+     list.add("Portal");
+
+         Iterator iter
+         = (Iterator) list.iterator();
+
+    
+          while (iter.hasNext()) {
+
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.onetomany.pojo.Employee" table="employee_tbl">
+
+		<id name="empId" column="empId">
+		  <generator class="increment"></generator>  
+		</id>
+		<property name="empName" />
+		<property name="salary" />
+
+		<list name="add" cascade="all">
+			<key column="addId"></key>
+			<index column="type"></index>
+			<one-to-many class="com.onetomany.pojo.Address" />
+		</list>
+	</class>
+</hibernate-mapping>

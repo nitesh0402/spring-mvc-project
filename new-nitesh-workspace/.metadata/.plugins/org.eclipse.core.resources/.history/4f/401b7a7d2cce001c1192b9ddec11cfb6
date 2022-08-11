@@ -1,0 +1,46 @@
+package bao;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller							
+public class GetReverse {
+	int num;
+	//int num=12345;
+	
+	@RequestMapping("reversenum")
+	
+	public ModelAndView  FindReverse(HttpServletRequest request, HttpServletResponse response) 
+	{	
+		System.out.println("hello controller");
+int num=12345;
+	int rev=0,rem=0;
+	String  number="";
+	ModelAndView mv =new ModelAndView("Reverse");
+//int	num1=Integer.parseInt(request.getParameter("num"));
+	
+	 while(num>0) 
+	 {
+		 
+		 rev=num%10;
+		 rem=rem*10+rev;
+		 num=num/10;
+	 number=number+""+rev;
+	
+	
+	 
+	/*
+	 * for(int i=1;i<=num;i++)
+	 * 
+	 * { rev=rev*i; }
+	 */
+	
+	
+	 mv.addObject("isRevesr","reverse number is"+rev);
+		 } 
+	 return mv;	
+	}
+}

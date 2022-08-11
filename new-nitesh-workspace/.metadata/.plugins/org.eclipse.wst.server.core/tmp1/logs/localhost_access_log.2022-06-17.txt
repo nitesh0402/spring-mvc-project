@@ -1,0 +1,7 @@
+127.0.0.1 - - [17/Jun/2022:23:29:55 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:23:29:57 +0530] "GET /SpringCrud/index.jsp HTTP/1.1" 200 965
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:23:29:57 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:23:30:14 +0530] "GET /SpringCrud/Insert?empId=101&enpName=nitesh&enpSAll=25000 HTTP/1.1" 500 8405
+127.0.0.1 - - [17/Jun/2022:23:34:13 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:23:34:14 +0530] "GET /SpringCrud/index.jsp HTTP/1.1" 200 965
+0:0:0:0:0:0:0:1 - - [17/Jun/2022:23:34:34 +0530] "GET /SpringCrud/Insert?empId=101&enpName=nitesh&enpSAll=25000 HTTP/1.1" 500 3003

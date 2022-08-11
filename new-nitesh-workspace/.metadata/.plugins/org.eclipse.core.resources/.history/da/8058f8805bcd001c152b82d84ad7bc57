@@ -1,0 +1,45 @@
+package bao;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+@Controller
+public class GetUnique {
+
+	@RequestMapping("uniquenum")
+	public ModelAndView GetUnique(HttpServletRequest request, HttpServletResponse response) 
+	{System.out.println("hello i am controller");
+		
+	int temp=1;
+	
+		ModelAndView mv =new ModelAndView("unique");
+		int num=Integer.parseInt(request.getParameter("arr"));
+		
+		
+					
+		for(int i=1;i<=num;i++) 
+		{
+			temp=temp*i;
+			
+			
+			{
+		
+		mv.addObject("isUnique",temp+"number is unique");
+		}		
+				}
+		return mv;
+				
+}
+			
+			
+		
+		
+		
+		
+		
+	}
+	
+

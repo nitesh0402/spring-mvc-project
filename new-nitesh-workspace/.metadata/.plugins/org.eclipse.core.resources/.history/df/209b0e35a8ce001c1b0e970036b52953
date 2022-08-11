@@ -1,0 +1,41 @@
+package bao;
+
+import java.util.ArrayList;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+//Type mismatch: cannot convert from Iterator to HTMLDocument.Iterator
+public class Palimdrome {
+
+	
+	public static void main(String []args) 
+	{
+		/* int num[]= {121,155661,112211,1234,1441}; */
+		
+		ArrayList st=new ArrayList();
+		
+		st.add(121);
+		st.add(5115);
+		st.add(121121);
+		st.add(11211211);
+		st.add(10201);
+		st.add(11211);
+		st.add(1221);
+		
+	//	int reverse,rem=0;
+		
+		Iterator it
+        = st.iterator();
+		
+		while(it.hasNext()) 
+		{
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+	
+}
